@@ -1,0 +1,15 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: zpaq-upstream
+Source: https://github.com/abbat/zpaq-upstream
+
+Files: *
+Copyright: 2014, Anton Batenev
+License: BSD-2
+
+Files: src/divsufsort.*
+Copyright: 2003-2008, Yuta Mori
+License: MIT
+
+Files: src/*
+Copyright: 2011-2014, Dell Inc., Matt Mahoney
+License: GPL-3

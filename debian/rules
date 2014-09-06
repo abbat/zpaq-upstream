@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+CXX		= g++
+PACKAGE		= zpaq-upstream
+LIBS		= -pthread
+CXXFLAGS	= -s -O3 -Dunix -DNDEBUG
+SOURCES		= src/zpaq.cpp src/libzpaq.cpp src/divsufsort.c
+
+override_dh_auto_clean:
+	dh_clean
+	rm -f $(PACKAGE)
+
+override_dh_auto_build:
+	$(CXX) $(CXXFLAGS) $(SOURCES) $(LIBS) -o $(PACKAGE)
+
+%:
+	dh $@

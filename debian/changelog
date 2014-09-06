@@ -1,0 +1,5 @@
+zpaq-upstream (6.55) stable; urgency=low
+
+  * Debianize current upstream version.
+
+ -- Anton Batenev <antonbatenev@yandex.ru>  Sat, 06 Sep 2014 23:16:56 +0400

@@ -1,0 +1,22 @@
+Source: zpaq-upstream
+Section: utils
+Priority: optional
+Maintainer: Anton Batenev <antonbatenev@yandex.ru>
+Build-Depends: debhelper (>= 7), build-essential
+Standards-Version: 3.9.5
+Vcs-Git: https://github.com/zpaq/zpaq.git
+Vcs-Browser: https://github.com/zpaq/zpaq
+Homepage: http://mattmahoney.net/dc/zpaq.html
+
+Package: zpaq-upstream
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Maximum reference compressor for ZPAQ open standard
+ PAQ familily is a series of open source data compression archivers
+ that have evolved through collaborative development to top rankings
+ on several benchmarks measuring compression ratio although at the
+ expense of speed and memory usage.
+ .
+ This package includes ZPAQ, a proposed standard format for highly
+ compressed data that allows new compression algorithms to be
+ developed without breaking compatibility with older programs.
