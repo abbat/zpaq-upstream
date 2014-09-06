@@ -10,6 +10,7 @@ Homepage: http://mattmahoney.net/dc/zpaq.html
 
 Package: zpaq-upstream
 Architecture: any
+Conflicts: zpaq
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Maximum reference compressor for ZPAQ open standard
  PAQ familily is a series of open source data compression archivers
