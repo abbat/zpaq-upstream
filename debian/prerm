@@ -1,5 +1,5 @@
 #!/bin/sh
-# prerm script for ydcmd
+# prerm script for zpaq-upstream
 #
 # see: dh_installdeb(1)
 

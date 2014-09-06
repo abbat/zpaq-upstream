@@ -4,7 +4,7 @@ Release:       1
 Summary:       Maximum reference compressor for ZPAQ open standard
 Group:         Productivity/Archiving/Compression
 License:       GPL-3
-URL:           https://github.com/abbat/ydcmd
+URL:           https://github.com/abbat/zpaq-upstream
 BuildRequires: gcc-c++
 
 Source0:       https://build.opensuse.org/source/home:antonbatenev/zpaq-upstream/zpaq-upstream_%{version}.tar.bz2
