@@ -8,7 +8,7 @@ URL:           https://github.com/abbat/zpaq-upstream
 Conflicts:     zpaq
 BuildRequires: gcc-c++
 
-Source0:       https://build.opensuse.org/source/home:antonbatenev/zpaq-upstream/zpaq-upstream_%{version}.tar.bz2
+Source0:       https://build.opensuse.org/source/home:antonbatenev:zpaq-upstream/zpaq-upstream/zpaq-upstream_%{version}.tar.bz2
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 
