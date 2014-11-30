@@ -49,5 +49,5 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Sun Nov 30 2014 Anton Batenev <antonbatenev@yandex.ru> 6.67-1
+* Sun Nov 30 2014 Anton Batenev <antonbatenev@yandex.ru> 6.57-1
 - Initial RPM release
