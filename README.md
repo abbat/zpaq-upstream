@@ -1,6 +1,6 @@
 # zpaq-upstream
 
-ZPAQ archiver upstream package from [zpaq](https://github.com/zpaq/zpaq) repository.
+ZPAQ archiver upstream package from [zpaq](http://mattmahoney.net/dc/zpaq.html).
 
 ## Download / Install
 

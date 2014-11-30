@@ -6,10 +6,6 @@ Files: *
 Copyright: 2014, Anton Batenev
 License: BSD-2
 
-Files: src/divsufsort.*
-Copyright: 2003-2008, Yuta Mori
-License: MIT
-
 Files: src/*
 Copyright: 2011-2014, Dell Inc., Matt Mahoney
 License: GPL-3

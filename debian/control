@@ -2,8 +2,8 @@ Source: zpaq-upstream
 Section: utils
 Priority: optional
 Maintainer: Anton Batenev <antonbatenev@yandex.ru>
-Build-Depends: debhelper (>= 7), build-essential
-Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.4
 Vcs-Git: https://github.com/zpaq/zpaq.git
 Vcs-Browser: https://github.com/zpaq/zpaq
 Homepage: http://mattmahoney.net/dc/zpaq.html
