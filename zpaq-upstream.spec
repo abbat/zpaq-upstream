@@ -1,5 +1,5 @@
 Name:          zpaq-upstream
-Version:       6.57
+Version:       6.59
 Release:       1
 Summary:       Maximum reference compressor for ZPAQ open standard
 Group:         Productivity/Archiving/Compression
@@ -49,5 +49,5 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Sun Nov 30 2014 Anton Batenev <antonbatenev@yandex.ru> 6.57-1
+* Sat Dec 13 2014 Anton Batenev <antonbatenev@yandex.ru> 6.59-1
 - Initial RPM release

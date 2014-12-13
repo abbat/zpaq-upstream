@@ -1,17 +1,5 @@
-zpaq-upstream (6.57) stable; urgency=low
+zpaq-upstream (6.59) stable; urgency=low
 
-  * Update to 6.57.
+  * Update to 6.59 (see http://mattmahoney.net/dc/zpaq.html).
 
- -- Anton Batenev <antonbatenev@yandex.ru>  Sun, 30 Nov 2014 20:13:00 +0300
-
-zpaq-upstream (6.55-1) stable; urgency=low
-
-  * Add conflicts with zpaq original package.
-
- -- Anton Batenev <antonbatenev@yandex.ru>  Sat, 07 Sep 2014 02:09:00 +0400
-
-zpaq-upstream (6.55) stable; urgency=low
-
-  * Debianize current upstream version.
-
- -- Anton Batenev <antonbatenev@yandex.ru>  Sat, 06 Sep 2014 23:16:56 +0400
+ -- Anton Batenev <antonbatenev@yandex.ru>  Sat, 13 Dec 2014 22:16:00 +0300
