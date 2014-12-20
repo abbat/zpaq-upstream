@@ -1,12 +1,12 @@
 Name:          zpaq-upstream
-Version:       6.59
+Version:       6.60
 Release:       1
 Summary:       Maximum reference compressor for ZPAQ open standard
 Group:         Productivity/Archiving/Compression
 License:       GPL-3
 URL:           https://github.com/abbat/zpaq-upstream
 Conflicts:     zpaq
-BuildRequires: gcc-c++
+BuildRequires: gcc-c++, perl
 
 Source0:       https://build.opensuse.org/source/home:antonbatenev:zpaq-upstream/zpaq-upstream/zpaq-upstream_%{version}.tar.bz2
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
@@ -29,11 +29,16 @@ developed without breaking compatibility with older programs.
 
 %build
 g++ -O3 -Dunix -DNDEBUG src/zpaq.cpp src/libzpaq.cpp -pthread -o zpaq-upstream
+/usr/bin/pod2man src/zpaq.pod > zpaq.1
 
 
 %install
 install -d %{buildroot}%{_bindir}
+install -d %{buildroot}%{_mandir}/man1
+
 install -m755 zpaq-upstream %{buildroot}%{_bindir}/zpaq-upstream
+install -m644 zpaq.1        %{buildroot}%{_mandir}/man1/zpaq.1
+
 ln -s %{_bindir}/zpaq-upstream %{buildroot}%{_bindir}/zpaq
 
 
@@ -43,11 +48,12 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc src/readme.txt src/zpaq.pod
+%doc src/readme.txt
+%doc %{_mandir}/man1/zpaq.1%{?ext_man}
 %{_bindir}/zpaq
 %{_bindir}/zpaq-upstream
 
 
 %changelog
-* Sat Dec 13 2014 Anton Batenev <antonbatenev@yandex.ru> 6.59-1
+* Sat Dec 20 2014 Anton Batenev <antonbatenev@yandex.ru> 6.60-1
 - Initial RPM release

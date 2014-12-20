@@ -13,6 +13,7 @@ override_dh_auto_clean:
 
 override_dh_auto_build:
 	$(CXX) $(CXXFLAGS) $(SOURCES) $(LIBS) -o $(PACKAGE)
+	/usr/bin/pod2man src/zpaq.pod > zpaq.1
 
 %:
 	dh $@
