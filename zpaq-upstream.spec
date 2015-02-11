@@ -1,9 +1,9 @@
 Name:          zpaq-upstream
-Version:       7.00
+Version:       7.01
 Release:       1
 Summary:       Maximum reference compressor for ZPAQ open standard
 Group:         Productivity/Archiving/Compression
-License:       GPL-3
+License:       Public Domain
 URL:           https://github.com/abbat/zpaq-upstream
 Conflicts:     zpaq
 BuildRequires: gcc-c++, perl
@@ -59,5 +59,5 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Tue Feb 03 2015 Anton Batenev <antonbatenev@yandex.ru> 7.00-1
+* Thu Feb 12 2015 Anton Batenev <antonbatenev@yandex.ru> 7.01-1
 - Initial RPM release

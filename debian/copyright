@@ -4,8 +4,8 @@ Source: https://github.com/abbat/zpaq-upstream
 
 Files: *
 Copyright: 2014, Anton Batenev
-License: BSD-2
+License: public-domain
 
 Files: src/*
 Copyright: 2011-2014, Dell Inc., Matt Mahoney
-License: GPL-3
+License: public-domain
