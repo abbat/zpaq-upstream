@@ -3,9 +3,9 @@ Upstream-Name: zpaq-upstream
 Source: https://github.com/abbat/zpaq-upstream
 
 Files: *
-Copyright: 2014, Anton Batenev
+Copyright: 2014-2015, Anton Batenev
 License: public-domain
 
 Files: src/*
-Copyright: 2011-2014, Dell Inc., Matt Mahoney
+Copyright: 2011-2015, Dell Inc., Matt Mahoney
 License: public-domain

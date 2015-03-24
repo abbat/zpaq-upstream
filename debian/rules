@@ -4,7 +4,7 @@
 CXX		= g++
 PACKAGE		= zpaq-upstream
 LIBS		= -pthread
-CXXFLAGS	= -s -O3 -Dunix -DNDEBUG
+CXXFLAGS	= -s -O3 -march=native -Dunix -DNDEBUG
 SOURCES		= src/zpaq.cpp src/libzpaq.cpp
 
 override_dh_auto_clean:
