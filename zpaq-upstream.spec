@@ -1,6 +1,6 @@
 Name:          zpaq-upstream
 Version:       7.05
-Release:       2
+Release:       1
 Summary:       Maximum reference compressor for ZPAQ open standard
 Group:         Productivity/Archiving/Compression
 License:       Public Domain
@@ -59,5 +59,5 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Mon May 11 2015 Anton Batenev <antonbatenev@yandex.ru> 7.05-2
+* Mon May 11 2015 Anton Batenev <antonbatenev@yandex.ru> 7.05-1
 - Initial RPM release
