@@ -1,3 +1,9 @@
+zpaq-upstream (7.05-2) stable; urgency=low
+
+  * Remove -march=native (probably fix Illegal Opcode issue on AMD).
+
+ -- Anton Batenev <antonbatenev@yandex.ru>  Mon, 11 May 2015 04:50:00 +0300
+
 zpaq-upstream (7.05) stable; urgency=low
 
   * Update to 7.05 (see http://mattmahoney.net/dc/zpaq.html).

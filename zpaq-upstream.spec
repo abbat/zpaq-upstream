@@ -1,6 +1,6 @@
 Name:          zpaq-upstream
 Version:       7.05
-Release:       1
+Release:       2
 Summary:       Maximum reference compressor for ZPAQ open standard
 Group:         Productivity/Archiving/Compression
 License:       Public Domain
@@ -32,7 +32,7 @@ developed without breaking compatibility with older programs.
 
 
 %build
-g++ -s -O3 -march=native -Dunix -DNDEBUG src/zpaq.cpp src/libzpaq.cpp -pthread -o zpaq-upstream
+g++ -s -O3 -Dunix -DNDEBUG src/zpaq.cpp src/libzpaq.cpp -pthread -o zpaq-upstream
 /usr/bin/pod2man src/zpaq.pod > zpaq.1
 
 
@@ -59,5 +59,5 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Sat Apr 18 2015 Anton Batenev <antonbatenev@yandex.ru> 7.05-1
+* Mon May 11 2015 Anton Batenev <antonbatenev@yandex.ru> 7.05-2
 - Initial RPM release
