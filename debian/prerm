@@ -1,5 +1,5 @@
 #!/bin/sh
-# prerm script for zpaq-upstream
+# prerm script for zpaq-6.55
 #
 # see: dh_installdeb(1)
 
@@ -19,7 +19,7 @@ set -e
 
 case "$1" in
     remove|upgrade|deconfigure)
-        update-alternatives --remove zpaq /usr/bin/zpaq-upstream
+        update-alternatives --remove zpaq /usr/bin/zpaq-6.55
     ;;
 
     failed-upgrade)

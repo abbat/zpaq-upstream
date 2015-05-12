@@ -1,14 +1,14 @@
-Name:          zpaq-upstream
+Name:          zpaq-6.55
 Version:       6.55
 Release:       2
 Summary:       Maximum reference compressor for ZPAQ open standard
 Group:         Productivity/Archiving/Compression
 License:       GPL-3
-URL:           https://github.com/abbat/zpaq-upstream
-Conflicts:     zpaq
+URL:           https://github.com/abbat/zpaq-upstream/tree/v6.55
+Conflicts:     zpaq, zpaq-upstream
 BuildRequires: gcc-c++
 
-Source0:       https://build.opensuse.org/source/home:antonbatenev:zpaq-upstream/zpaq-upstream/zpaq-upstream_%{version}.tar.bz2
+Source0:       https://build.opensuse.org/source/home:antonbatenev:zpaq-upstream/%{name}/%{name}_%{version}.tar.bz2
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 
@@ -24,17 +24,17 @@ developed without breaking compatibility with older programs.
 
 
 %prep
-%setup -q -n zpaq-upstream
+%setup -q -n %{name}
 
 
 %build
-g++ -O3 -Dunix -DNDEBUG src/zpaq.cpp src/libzpaq.cpp src/divsufsort.c -pthread -o zpaq-upstream
+g++ -O3 -Dunix -DNDEBUG src/zpaq.cpp src/libzpaq.cpp src/divsufsort.c -pthread -o %{name}
 
 
 %install
 install -d %{buildroot}%{_bindir}
-install -m755 zpaq-upstream %{buildroot}%{_bindir}/zpaq-upstream
-ln -s %{_bindir}/zpaq-upstream %{buildroot}%{_bindir}/zpaq
+install -m755 %{name} %{buildroot}%{_bindir}/%{name}
+ln -s %{_bindir}/%{name} %{buildroot}%{_bindir}/zpaq
 
 
 %clean
@@ -45,9 +45,9 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc src/readme.txt
 %{_bindir}/zpaq
-%{_bindir}/zpaq-upstream
+%{_bindir}/%{name}
 
 
 %changelog
-* Mon Sep 07 2014 Anton Batenev <antonbatenev@yandex.ru> 6.55-1
+* Wed May 13 2015 Anton Batenev <antonbatenev@yandex.ru> 6.55-1
 - Initial RPM release

@@ -2,7 +2,7 @@
 # -*- makefile -*-
 
 CXX		= g++
-PACKAGE		= zpaq-upstream
+PACKAGE		= zpaq-6.55
 LIBS		= -pthread
 CXXFLAGS	= -s -O3 -Dunix -DNDEBUG
 SOURCES		= src/zpaq.cpp src/libzpaq.cpp src/divsufsort.c
