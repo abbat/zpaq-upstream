@@ -2,4 +2,4 @@ compression = "bzip2"
 compression-level = 9
 tar-ignore = .git
 tar-ignore = .gitignore
-tar-ignore = zpaq-upstream.spec
+tar-ignore = zpaq-6.55.spec
