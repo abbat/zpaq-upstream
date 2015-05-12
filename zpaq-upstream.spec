@@ -5,14 +5,14 @@ Summary:       Maximum reference compressor for ZPAQ open standard
 Group:         Productivity/Archiving/Compression
 License:       Public Domain
 URL:           https://github.com/abbat/zpaq-upstream
-Conflicts:     zpaq
+Conflicts:     zpaq, zpaq-6.55
 BuildRequires: gcc-c++, perl
 
 %if 0%{?fedora} >= 19
 BuildRequires: perl-podlators
 %endif
 
-Source0:       https://build.opensuse.org/source/home:antonbatenev:zpaq-upstream/zpaq-upstream/zpaq-upstream_%{version}.tar.bz2
+Source0:       https://build.opensuse.org/source/home:antonbatenev:zpaq-upstream/%{name}/%{name}_%{version}.tar.bz2
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 
