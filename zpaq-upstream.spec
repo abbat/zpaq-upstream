@@ -32,7 +32,7 @@ developed without breaking compatibility with older programs.
 
 
 %build
-g++ -s -O3 -Dunix -DNDEBUG src/zpaq.cpp src/libzpaq.cpp -pthread -o zpaq-upstream
+g++ -O3 -Dunix -DNDEBUG src/zpaq.cpp src/libzpaq.cpp -pthread -o %{name}
 /usr/bin/pod2man src/zpaq.pod > zpaq.1
 
 
