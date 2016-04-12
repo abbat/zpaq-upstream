@@ -1,4 +1,4 @@
-/* libzpaq.h - LIBZPAQ Version 7.06 header - Mar. 9, 2016.
+/* libzpaq.h - LIBZPAQ Version 7.10 header - Apr. 6, 2016.
 
   This software is provided as-is, with no warranty.
   I, Matt Mahoney, release this software into
@@ -916,10 +916,11 @@ void Array<T>::resize(size_t sz, int ex) {
     ::free((char*)data-offset);
   }
   n=0;
+  offset=0;
   if (sz==0) return;
   n=sz;
   const size_t nb=128+n*sizeof(T);  // test for overflow
-  if (nb<=128 || (nb-128)/sizeof(T)!=n) error("Array too big");
+  if (nb<=128 || (nb-128)/sizeof(T)!=n) n=0, error("Array too big");
   data=(T*)::calloc(nb, 1);
   if (!data) n=0, error("Out of memory");
   offset=64-(((char*)data-(char*)0)&63);
@@ -1215,7 +1216,7 @@ private:
   U32 curr;          // last 4 bytes of archive or remaining bytes in subblock
   U32 rpos, wpos;    // read, write position in buf
   Predictor pr;      // to get p
-  enum {BUFSIZE=1<<16};
+  enum {BUFSIZE=1<<12};
   Array<char> buf;   // input buffer of size BUFSIZE bytes
   int decode(int p); // return decoded bit (0..1) with prob. p (0..65535)
 };
