@@ -1,5 +1,5 @@
-zpaq-upstream (7.13) stable; urgency=low
+zpaq-upstream (7.14) stable; urgency=low
 
-  * Update to 7.13 (see http://mattmahoney.net/dc/zpaq.html).
+  * Update to 7.14 (see http://mattmahoney.net/dc/zpaq.html).
 
- -- Anton Batenev <antonbatenev@yandex.ru>  Sat, 07 May 2016 15:28:43 +0300
+ -- Anton Batenev <antonbatenev@yandex.ru>  Sat, 06 Aug 2016 13:37:44 +0300
