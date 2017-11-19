@@ -27,6 +27,9 @@ compressed data that allows new compression algorithms to be
 developed without breaking compatibility with older programs.
 
 
+%define debug_package %{nil}
+
+
 %prep
 %setup -q -n zpaq-upstream
 
