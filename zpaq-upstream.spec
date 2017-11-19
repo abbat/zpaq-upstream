@@ -53,7 +53,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %doc src/readme.txt src/COPYING
-%doc %{_mandir}/man1/zpaq.1%{?ext_man}
+%doc %{_mandir}/man1/zpaq.1*
 %{_bindir}/zpaq
 %{_bindir}/zpaq-upstream
 
