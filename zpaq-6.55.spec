@@ -6,7 +6,7 @@ Group:         Productivity/Archiving/Compression
 License:       GPL-3
 URL:           https://github.com/abbat/zpaq-upstream/tree/v6.55
 Conflicts:     zpaq, zpaq-upstream
-BuildRequires: gcc-c++
+BuildRequires: gcc-c++, binutils
 
 Source0:       https://build.opensuse.org/source/home:antonbatenev:zpaq-upstream/%{name}/%{name}_%{version}.tar.bz2
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
