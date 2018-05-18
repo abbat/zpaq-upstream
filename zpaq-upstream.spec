@@ -6,7 +6,7 @@ Group:         Productivity/Archiving/Compression
 License:       Public Domain
 URL:           https://github.com/abbat/zpaq-upstream
 Conflicts:     zpaq, zpaq-6.55
-BuildRequires: gcc-c++, perl
+BuildRequires: gcc-c++, perl, binutils
 
 %if 0%{?fedora} >= 19
 BuildRequires: perl-podlators
